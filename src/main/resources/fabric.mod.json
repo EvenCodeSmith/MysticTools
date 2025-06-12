@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mystictools",
+	"version": "${version}",
+	"name": "MysticTools",
+	"description": "Adds a bunch of 'Mystic' Tools to your game centered around a Luck mechanic",
+	"authors": [
+		"Even2L!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/mystictools/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.even.mystictools.MysticTools"
+		],
+		"fabric-datagen": [
+			"net.even.mystictools.MysticToolsDataGenerator"
+		],
+		"client": [
+			"net.even.mystictools.MysticToolsClient"
+		]
+	},
+	"mixins": [
+		"mystictools.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
