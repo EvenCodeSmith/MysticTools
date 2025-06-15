@@ -4,6 +4,10 @@
   "block.mystictools.pink_garnet_block": "Block of Pink Garnet",
 
   "item.mystictools.mystic_pickaxe": "Mystic Pickaxe",
+  "item.mystictools.aurum_solaris_helmet": "Everglowing Golden Mask",
+  "item.mystictools.aurum_solaris_chestplate": "Chestplate of the Dawnblade",
+  "item.mystictools.aurum_solaris_leggings": "Leggings of the Solar Sentry",
+  "item.mystictools.aurum_solaris_boots": "Golden Steps",
 
   "itemgroup.mystictools.mystic_items": "Mystic Items",
   "itemgroup.mystictools.mystic_test_items": "Mystic Test Items"

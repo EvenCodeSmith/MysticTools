@@ -18,9 +18,11 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.mystictools.mystic_items"))
                     .entries((displayContext, entries) ->
                     {
-                        entries.add(ModItems.PINK_GARNET);
-                        entries.add(ModBlocks.PINK_GARNET_BLOCK);
                         entries.add(ModItems.MYSTIC_PICKAXE);
+                        entries.add(ModItems.AURUM_SOLARIS_HELMET);
+                        entries.add(ModItems.AURUM_SOLARIS_CHESTPLATE);
+                        entries.add(ModItems.AURUM_SOLARIS_LEGGINGS);
+                        entries.add(ModItems.AURUM_SOLARIS_BOOTS);
                     })
                     .build());
 

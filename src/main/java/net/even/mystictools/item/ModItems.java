@@ -13,8 +13,22 @@ import net.even.mystictools.item.ModItemGroups;
 
 public class ModItems {
     public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings()));
+
     public static final Item MYSTIC_PICKAXE = registerItem("mystic_pickaxe",  new MysticPickaxeItem(
                     ToolMaterials.NETHERITE, new Item.Settings()));
+
+    public static final Item AURUM_SOLARIS_HELMET = registerItem("aurum_solaris_helmet",
+            new ArmorItem(ModArmorMaterials.AURUM_SOLARIS_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+    public static final Item AURUM_SOLARIS_CHESTPLATE = registerItem("aurum_solaris_chestplate",
+            new ArmorItem(ModArmorMaterials.AURUM_SOLARIS_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+    public static final Item AURUM_SOLARIS_LEGGINGS = registerItem("aurum_solaris_leggings",
+            new ArmorItem(ModArmorMaterials.AURUM_SOLARIS_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+    public static final Item AURUM_SOLARIS_BOOTS = registerItem("aurum_solaris_boots",
+            new ArmorItem(ModArmorMaterials.AURUM_SOLARIS_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
 
     private static Item registerItem(String name, Item item)
     {

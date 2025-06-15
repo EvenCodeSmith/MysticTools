@@ -19,6 +19,5 @@ public class MysticTools implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-		System.out.println("Hello World! ASLDFKJAS");
 	}
 }
