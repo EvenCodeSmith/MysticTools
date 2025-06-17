@@ -1,6 +1,7 @@
 package net.even.mystictools.item;
 
 import net.even.mystictools.MysticTools;
+import net.even.mystictools.item.custom.ModArmorItem;
 import net.even.mystictools.item.custom.MysticPickaxeItem;
 import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -18,7 +19,7 @@ public class ModItems {
                     ToolMaterials.NETHERITE, new Item.Settings()));
 
     public static final Item AURUM_SOLARIS_HELMET = registerItem("aurum_solaris_helmet",
-            new ArmorItem(ModArmorMaterials.AURUM_SOLARIS_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+            new ModArmorItem(ModArmorMaterials.AURUM_SOLARIS_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
     public static final Item AURUM_SOLARIS_CHESTPLATE = registerItem("aurum_solaris_chestplate",
             new ArmorItem(ModArmorMaterials.AURUM_SOLARIS_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,

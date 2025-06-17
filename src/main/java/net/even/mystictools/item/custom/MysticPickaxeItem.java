@@ -44,23 +44,13 @@ public class MysticPickaxeItem extends PickaxeItem {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        // 1) Nur auf dem Server ausführen
-        // 2) Nur bei echten Spielern
         if (attacker.getWorld().isClient() || !(attacker instanceof PlayerEntity player)) {
             return true;
         }
-
-        // Ab hier bist du sicher auf dem Server und hast einen Player
-        int xp = Math.min(getXP(stack) + 1, MAX_XP);
-        setXP(stack, xp);
-        applyEffects(player, xp);
-
-        // Durability-Reduktion übersprungen → unzerstörbar
         return true;
     }
 
     private int getXP(ItemStack stack) {
-        // Lese das NbtComponent (CUSTOM_DATA) aus dem Stack
         NbtComponent comp = stack.get(DataComponentTypes.CUSTOM_DATA);
         if (comp != null) {
             NbtCompound tag = comp.copyNbt();
@@ -70,11 +60,9 @@ public class MysticPickaxeItem extends PickaxeItem {
     }
 
     private void setXP(ItemStack stack, int xp) {
-        // Erstelle ein neues NBT und packe den XP-Wert rein
         NbtCompound tag = new NbtCompound();
         tag.putInt(XP_KEY, xp);
 
-        // Wandle es in ein NbtComponent um und speichere es
         NbtComponent comp = NbtComponent.of(tag);
         stack.set(DataComponentTypes.CUSTOM_DATA, comp);
     }

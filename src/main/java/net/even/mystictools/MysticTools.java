@@ -1,6 +1,8 @@
 package net.even.mystictools;
 
 import net.even.mystictools.block.ModBlocks;
+import net.even.mystictools.effect.ModEffects;
+import net.even.mystictools.event.ModEvents;
 import net.even.mystictools.item.ModItemGroups;
 import net.even.mystictools.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -19,5 +21,7 @@ public class MysticTools implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModEvents.registerEvents();
+		ModEffects.registerEffects();
 	}
 }
