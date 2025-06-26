@@ -1,0 +1,30 @@
+{
+
+  "name": "mystictools:mini_house/start_pool",
+
+
+  "fallback": "minecraft:mansion",
+
+
+  "elements": [
+    {
+
+
+      "weight": 1,
+      "element": {
+
+
+        "location": "mystictools:mini_house",
+
+
+        "processors": "minecraft:empty",
+
+
+        "projection": "rigid",
+
+
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
