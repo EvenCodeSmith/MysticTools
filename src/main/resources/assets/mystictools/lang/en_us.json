@@ -8,8 +8,21 @@
   "item.mystictools.aurum_solaris_chestplate": "Chestplate of the Dawnblade",
   "item.mystictools.aurum_solaris_leggings": "Leggings of the Solar Sentry",
   "item.mystictools.aurum_solaris_boots": "Golden Steps",
+  "item.mystictools.mantis_spawn_egg": "Mantis Spawn Egg",
+
+  "block.mystictools.beech_log" : "Beech Log",
+  "block.mystictools.beech_wood" : "Beech Wood",
+  "block.mystictools.stripped_beech_log" : "Stripped Beech Log",
+  "block.mystictools.stripped_beech_wood" : "Stripped Beech Wood",
+  "block.mystictools.beech_planks" : "Beech Planks",
+  "block.mystictools.beech_leaves" : "Beech Leaves",
+  "block.mystictools.beech_sapling" : "Beech Sapling",
+
   "effect.mystictools.sol_invictus": "Sol Invictus",
 
+
   "itemgroup.mystictools.mystic_items": "Mystic Items",
-  "itemgroup.mystictools.mystic_test_items": "Mystic Test Items"
+  "itemgroup.mystictools.mystic_test_items": "Mystic Test Items",
+
+  "entity.mystictools.mantis": "Mantis"
 }
